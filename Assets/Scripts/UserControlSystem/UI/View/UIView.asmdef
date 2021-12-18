@@ -1,9 +1,7 @@
 {
-    "name": "UserControlSystem",
+    "name": "UIView",
     "rootNamespace": "",
-    "references": [
-        "GUID:011fd527f9bc4475bb1285695cae328f"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
