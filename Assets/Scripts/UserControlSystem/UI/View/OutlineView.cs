@@ -9,7 +9,7 @@ namespace UserControlSystem.UI.View
         [SerializeField] private Material _outlineMaskMaterial;
         [SerializeField] private Material _outlineFillMaterial;
 
-        private MeshRenderer _renderer;
+        private Renderer _renderer;
 
         private void Awake()
         {

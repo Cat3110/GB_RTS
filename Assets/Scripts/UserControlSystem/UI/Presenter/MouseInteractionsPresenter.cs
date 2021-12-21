@@ -1,5 +1,6 @@
 using Abstractions;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 namespace UserControlSystem
@@ -7,6 +8,7 @@ namespace UserControlSystem
     public class MouseInteractionsPresenter : MonoBehaviour
     {
         [SerializeField] private Camera _camera;
+        [SerializeField] private EventSystem _eventSystem;
         [SerializeField] private SelectableValue _selectedObject;
 
         private ISelectable _selectable;
@@ -23,6 +25,11 @@ namespace UserControlSystem
 
         private void Update()
         {
+            if (_eventSystem.IsPointerOverGameObject())
+            {
+                return;
+            }
+            
             if (!Input.GetMouseButtonUp(0))
             {
                 return;
