@@ -7,7 +7,7 @@ namespace Core.CommandExecutors
     { 
         public override void ExecuteSpecificCommand(IMoveCommand command)
         {
-            Debug.Log("Move form core");
+            Debug.Log($"Move from core to {command.Target}");
             
         }
     }
